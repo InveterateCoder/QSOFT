@@ -1,0 +1,144 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.btn {
+  background-color: tomato;
+  text-decoration: none;
+  color: white;
+  padding: 10px 40px;
+}
+
+.btn-sm {
+  font-size: 0.8rem;
+  padding: 5px 15px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 5%;
+  margin: 0;
+  height: 50px;
+}
+
+.navbar_logo {
+  color: orangered;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+}
+
+.navbar_nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar_nav_item {
+  display: inline;
+  margin-left: 1rem;
+}
+
+.navbar_nav_item_link {
+  text-decoration: none;
+  color: inherit;
+  font-size: 0.8rem;
+}
+.navbar_text {
+  font-size: 0.8rem;
+  margin-left: 3rem;
+}
+
+.banner {
+  background-image: url(/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 5rem 0.5rem;
+}
+
+.banner_header {
+  color: white;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.banner_actions {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.content_header {
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 1.3rem;
+}
+
+.content_grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 25px;
+  justify-content: center;
+}
+
+.content_grid_card {
+  padding: 0;
+  margin: 0;
+  max-width: 225px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.content_grid_card_img {
+  width: 100%;
+}
+
+.content_grid_card_header {
+  font-size: 1.05rem;
+}
+
+.content_grid_card_divider {
+  display: inline-block;
+  width: 3.5rem;
+  border-color: red;
+}
+
+.content_grid_card_body {
+  padding: 0;
+  margin: 0;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-height: 55px;
+  background-color: #212529;
+  color: white;
+  padding: 0 5%;
+}
+
+.footer_info {
+  flex-grow: 1;
+}
+
+@media only screen and (max-width: 820px) {
+  .content_grid {
+    grid-template-columns: auto
+  }
+  .content_grid_card {
+    max-width: 600px;
+    width: 90%;
+    margin:auto;
+    margin-bottom: 3rem;
+  }
+}
